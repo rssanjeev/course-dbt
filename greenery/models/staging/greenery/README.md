@@ -1,4 +1,5 @@
 How many users do we have?
+
 Query: 
 select 
     count(distinct user_id) Total_Users
@@ -8,6 +9,7 @@ Result: 130
 
 On average, how many orders do we receive per hour?
 with cte as(
+
 Query:
 select 
     DATE(created_at),
@@ -23,6 +25,7 @@ from cte;
 Result: 7.520833
 
 On average, how long does an order take from being placed to being delivered?
+
 Query:
 with cte as (
 select 
@@ -37,6 +40,7 @@ Result: 3.891803
 How many users have only made one purchase? Two purchases? Three+ purchases?
 Note: you should consider a purchase to be a single order. In other words, if a user places one order for 3 products, they are considered to have made 1 purchase.
 
+Query:
 with cte as
 (select 
     user_id,
