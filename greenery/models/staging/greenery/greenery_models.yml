@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_greenery_addresses
+    description: Addresses
+    columns:
+      - name: address_id
+        tests:
+          - not_null
+  - name: stg_greenery_addresses
+    description: Addresses
+    columns:
+      - name: address_id
+        tests:
+          - not_null
+
